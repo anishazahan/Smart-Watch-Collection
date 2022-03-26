@@ -1,0 +1,12 @@
+.choice-btn{
+    background-color: rgb(23, 23, 24);
+    color: white;
+    margin-top: 20px;
+    
+}
+.choice-btn:hover{
+    background-color: white;
+    color: rgb(212, 18, 154);
+    font-weight: bold;
+    border: 2px solid rgb(212, 18, 154);
+}
