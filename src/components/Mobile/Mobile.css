@@ -1,6 +1,9 @@
 .cart-btn{
-    color: #7364D0;
+    color: rgb(146, 9, 112);
+    
+    padding: 10px 15px;
+   font-weight: 600;
 }
 .cart-btn:hover{
-    color: forestgreen;
+    color: gray;
 }

@@ -5,8 +5,9 @@
     
 }
 .choice-btn:hover{
-    background-color: white;
-    color: rgb(212, 18, 154);
+    background-color: gray;
+    color: white;
     font-weight: bold;
-    border: 2px solid rgb(212, 18, 154);
+   
+   border: 2px solid rgb(212, 18, 154);
 }
