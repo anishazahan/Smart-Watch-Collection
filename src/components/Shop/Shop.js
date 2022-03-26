@@ -21,12 +21,17 @@ const Shop = () => {
             setAddCart(newCart);
         }
     }
-    // const randomItem  = () =>{
-    //     var random = addCart[Math.floor(Math.random() * addCart.length)]
-    //     setAddCart(random);
-    // }
+    const suggestOne  = () =>{
+      if(addCart.length===0){
+          alert('Please add some products');
+          return addCart;
+      }else{
+          const random = [addCart[Math.floor(Math.random()*addCart.length)]];
+          setAddCart(random);
+      }
+    }
     const clearCart = () =>{
-        
+        setAddCart([]);
     }
     return (
         <div className='shop-container mt-5 container-fluid'>
@@ -42,8 +47,8 @@ const Shop = () => {
                         addCart.map(mobile => <Cart mobile = {mobile}key={mobile.id}/>)
                     }
                         <div>
-                            <button className='btn choice-btn d-block'>Choice One</button>
-                            <button onClick={()=>clearCart} className='btn choice-btn'>Choice Again</button>
+                            <button onClick={()=>suggestOne()} className='btn choice-btn d-block'>Choice One</button>
+                            <button onClick={()=>clearCart()} className='btn choice-btn'>Reset</button>
                         </div>
                     </div>
                    </div>
